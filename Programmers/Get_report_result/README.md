@@ -17,4 +17,8 @@
     진행중
 
 ### Sonbyeongil
-    진행중
+    HashMap에 HashSet을 사용해 중복을 제거한 reportMap을 선언해준다.
+    중요한것은 reportMap은 그 유저가 신고한 유저가 아닌 그 유저를 신고한 유저를 추가해 주어야 한다.
+    reportMap의 key값을 기준으로 size가 k이상이면 그 유저들은 key유저를 신고한 유저로 메일을 받는다.
+    여기서 메일의 개수를 담는 result 는 LinkedHashMap으로 기존 Hashmap과 달리 순서가 보장된다.
+    순서가 보장되었기 때문에 람다식을 사용해 리턴해도 된다.
