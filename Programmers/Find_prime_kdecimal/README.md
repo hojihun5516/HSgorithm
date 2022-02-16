@@ -1,22 +1,36 @@
-[프로그래머스] k진수에서 소수 개수 구하기
-======================
+# [프로그래머스] k진수에서 소수 개수 구하기
+
 # 1. 문제명 및 난이도
+
 ## ▶ 문제명
-	k진수에서 소수 개수 구하기
+
+    k진수에서 소수 개수 구하기
 
 ## ▶ 난이도
-	Level 2
 
-****
+    Level 2
+
+---
+
 ## 2. 출처
+
 ### [프로그래머스](https://programmers.co.kr/learn/courses/30/lessons/92335)
+
 <img src="https://programmers.co.kr/assets/icons/apple-icon-6eafc2c4c58a21aef692d6e44ce99d41f999c71789f277317532d0a9c6db8976.png" width="100px" height="100px" title="px(픽셀) 크기 설정" alt="main1"></img><br/>
-****
+
+---
+
 ## 3. 알고리즘 [풀이]
+
 ### Hojihoon
-    진행중
+
+    convert_code함수를 이용하여 k진수로 변경해주었습니다.
+    string을 0으로 split하여 배열로 쪼개고 integer로 변경, 1체크, null체크를 해주었습니다.
+    그 후 각 데이터가 소수인지 아닌지를 확인해줬습니다.
+    소수를 구하는 공식에서 루트로 계산해주지 않으면 테스트케이스 1에서 시간초과가 나옵니다.
 
 ### Sonbyeongil
+
     n을 k진수화 한후
     0으로 split하여 소수를 찾아준다.
     여기서 '1001' 처럼 '00'일시 split한 결과가 ""가 나올수 있으니 예외 처리 해준다.
